@@ -17,7 +17,7 @@ export default function Document() {
 				/>
 				<meta name='theme-color' content='#f4f4f5' />
 				<link rel='apple-touch-icon' href='/images/icon-maskable-512.png' />
-				<link rel='manifest' href='/manifest.json' />
+				<link rel='manifest' href='/next-pwa/manifest.json' />
 			</Head>
 			<body>
 				<Main />

@@ -26,7 +26,7 @@
 			"purpose": "maskable"
 		}
 	],
-	"start_url": "/next-pwa/?source=pwa",
+	"start_url": "/next-pwa/",
 	"orientation": "portrait",
 	"display": "standalone",
 	"scope": "/next-pwa/"
