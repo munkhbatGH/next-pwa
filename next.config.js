@@ -6,4 +6,9 @@ const withPWA = require('next-pwa')({
 	skipWaiting: true,
 })
 
-module.exports = {...withPWA({ reactStrictMode: true })}
+const nextConfig = {
+	reactStrictMode: true,
+	distDir: 'build',
+}
+
+module.exports = {...withPWA(nextConfig)}
