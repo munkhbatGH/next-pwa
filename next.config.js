@@ -6,14 +6,16 @@ const withPWA = require('next-pwa')({
 	skipWaiting: true,
 })
 
-const repo = 'next-pwa' // <-- change to your GitHub repo name
+const isProd = process.env.NODE_ENV === 'production'
+const repoName = 'next-pwa' // CHANGE THIS
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-	reactStrictMode: true,
-  	output: 'export', // <-- Required for `next export`
-	basePath: `/${repo}`,
-	assetPrefix: `/${repo}/`,
-	trailingSlash: true, // <-- Required for GitHub Pages to handle routing
+  reactStrictMode: true,
+  output: 'export',
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
+  trailingSlash: true,
 }
 
 module.exports = {...withPWA(nextConfig)}
