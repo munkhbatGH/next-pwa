@@ -247,7 +247,7 @@ const TEXT = {
     console.log('---------main done---------');
   }
   
-  console.log('---------pwa-install-prompt loaded---------');
+  console.log('---------pwa-install-prompt loaded---------')
   // Run main when DOM is ready
   if (document.readyState === "loading") {
     // Loading hasn't finished yet
