@@ -1,3 +1,7 @@
+## Git
+git pull origin main
+git push -u origin main
+
 <p align="center">
 	<img alt="next-pwa" src="public/images/icon-512.png" width="90">
 	<h2 align="center">Next PWA Template</h2>
