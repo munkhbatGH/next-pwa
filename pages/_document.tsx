@@ -19,6 +19,7 @@ export default function Document() {
 				<meta name='theme-color' content='#f4f4f5' />
 				<link rel='apple-touch-icon' href={isProd ? '/next-pwa/images/icon-maskable-512.png' : '/images/icon-maskable-512.png'} />
 				<link rel='manifest' href={isProd ? `/next-pwa/manifest.json` : '/manifest.json'} />
+				<script id="wepp-install-modal" src={isProd ? '/next-pwa/install/index.js' : '/install/index.js'} defer></script>
 			</Head>
 			<body>
 				<Main />
